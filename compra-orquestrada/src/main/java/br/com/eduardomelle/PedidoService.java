@@ -6,7 +6,7 @@ import java.util.Set;
 import javax.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
-public class ProdutoService {
+public class PedidoService {
 
   private Set<Long> pedidos = new HashSet<>();
 
