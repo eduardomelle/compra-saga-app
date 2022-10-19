@@ -35,7 +35,8 @@ public class CompraOrquestradaResource {
     pedidoService.newPedido(id);
     try {
       creditoService.newPedidoValor(id, valor);
-      System.out.println("Pedido " + id + " registrado no valor de " + valor);
+      System.out.println("Pedido " + id + " registrado no valor de " + valor + ". Saldo disponível: "
+          + creditoService.getCreditoTotal());
     } catch (IllegalStateException e) {
       pedidoService.cancelPedido(id);
       System.out.println("Pedido " + id + " estornado no valor de " + valor);

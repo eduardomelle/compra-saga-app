@@ -30,4 +30,8 @@ public class CreditoService {
     pedido_valor.remove(id);
   }
 
+  public int getCreditoTotal() {
+    return creditoTotal;
+  }
+
 }
